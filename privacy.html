@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AFK Studios Bot legal information"><title>Privacy Policy | AFK Studios</title><style>
+:root{--bg:#07111f;--panel:#0d1b2e;--panel2:#10243d;--text:#edf5ff;--muted:#a9bdd4;--blue:#3995ff;--line:#203a59}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top right,#102b4b 0,#07111f 48%);color:var(--text);font:16px/1.7 Inter,Segoe UI,Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:36px 22px 70px}.nav{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:42px}
+.brand{font-weight:800;letter-spacing:.08em;color:white}.brand span{color:var(--blue)}
+a{color:#79baff;text-decoration:none}a:hover{text-decoration:underline}
+.hero,.doc{background:rgba(13,27,46,.94);border:1px solid var(--line);border-radius:18px;padding:30px}
+.eyebrow{color:#79baff;text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:700}
+h1{font-size:clamp(2rem,5vw,3rem);line-height:1.12;margin:.4em 0}h2{font-size:1.25rem;margin:1.8em 0 .45em;color:#dcecff}
+p,li{color:#d0deed}.muted,small{color:var(--muted)}.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:24px}
+.card{display:block;background:var(--panel2);border:1px solid #2a4c70;border-radius:14px;padding:20px;color:var(--text)}
+.card strong{display:block;font-size:1.1rem;margin-bottom:4px}.notice{border-left:3px solid var(--blue);padding:12px 16px;background:#0b2037;border-radius:8px;color:#d8eaff;margin:20px 0}
+footer{margin-top:28px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+.back{display:inline-block;margin-bottom:18px}.date{color:var(--muted);font-size:.92rem}
+@media(max-width:600px){.wrap{padding:22px 14px 48px}.hero,.doc{padding:22px}.nav{margin-bottom:24px}}
+</style></head>
+<body><main class="wrap"><div class="nav"><div class="brand">ΛFK <span>STUDIOS</span></div><a href="index.html">Legal home</a></div>
+<article class="doc">
+<a class="back" href="index.html">← Legal home</a>
+<div class="eyebrow">AFK Studios Discord Bot</div><h1>Privacy Policy</h1>
+<p class="date">Effective date: November 23, 2026 · Last updated: November 23, 2026</p>
+<p>This Privacy Policy explains how the AFK Studios Discord bot (“the Bot”) handles information when it is used in Discord servers. The Bot is operated under the AFK Studios name (“we”, “us”, or “our”).</p>
+<h2>1. Information the Bot stores</h2>
+<p>Based on the current Bot version, information stored in its local SQLite database includes:</p>
+<ul><li><strong>Server configuration:</strong> Discord server (guild) IDs and settings such as ticket category and support role, welcome-message settings, security log channel, raid thresholds, and statistics settings.</li><li><strong>Scheduled messages:</strong> server ID, destination channel ID, scheduled time, message text, and the date the message was last sent.</li><li><strong>Automatic replies:</strong> server ID, trigger text, reply text, and whether the reply is enabled.</li></ul>
+<p>Ticket channels created by the Bot use the ticket creator’s Discord user ID in the channel name and channel topic. The Bot does not currently save ticket transcripts or message histories in its own database.</p>
+<h2>2. Information processed while the Bot runs</h2>
+<p>To provide its features, the Bot receives information through Discord’s API. For example, it processes member join and leave events for welcome and member statistics features. The basic anti-spam feature temporarily checks message timing and recent message text in memory to identify flooding or repeated messages. This message content is not written to the Bot’s SQLite database by the current anti-spam implementation. The raid-alert feature temporarily tracks join timestamps in memory.</p>
+<h2>3. How information is used</h2>
+<ul><li>To apply server-specific Bot settings and deliver configured features.</li><li>To send scheduled messages, automatic replies, welcome DMs, announcements, and ticket notifications.</li><li>To create ticket and partnership channels and roles when an authorized administrator requests them.</li><li>To detect possible spam or rapid join activity and provide moderation actions or security alerts.</li><li>To calculate and display server member statistics.</li><li>To maintain, troubleshoot, and secure the Bot.</li></ul>
+<h2>4. Sharing and service providers</h2>
+<p>We do not sell the information stored by the Bot. Information is transmitted to Discord as needed to operate the Bot, such as sending messages, creating channels, or assigning roles. The Bot is hosted by a third-party hosting provider, which may process or store the Bot’s database and runtime data as part of providing hosting. Their own terms and privacy practices also apply.</p>
+<h2>5. Retention and deletion</h2>
+<p>Configuration, scheduled-message, and automatic-reply records remain in the Bot’s database until they are changed or removed through available Bot controls, or the database is deleted by the Bot operator. The current Bot version does not provide a complete self-service data export or deletion command. If you need a server’s stored configuration removed, contact us and identify the server. Removing the Bot from a server does not automatically guarantee that its database records are immediately erased.</p>
+<h2>6. Security</h2>
+<p>We take reasonable steps to protect the Bot’s data, including keeping the Bot token private and limiting access to the hosting environment. No storage or transmission method is completely secure. Server administrators should also protect their own Discord accounts, permissions, and Bot configuration.</p>
+<h2>7. Children and age requirements</h2>
+<p>The Bot is intended for use by people who are permitted to use Discord under Discord’s applicable terms and age requirements. We do not knowingly collect personal information directly from children outside the information made available through Discord’s services.</p>
+<h2>8. Your choices and requests</h2>
+<p>Server administrators can change or remove Bot settings and scheduled or automatic replies using the Bot’s available commands. For privacy questions or requests relating to information stored by the Bot, contact us using the address below.</p>
+<h2>9. Changes to this Policy</h2>
+<p>We may update this Policy as the Bot’s features or data practices change. The updated version will be published on this page with a revised date.</p>
+<h2>10. Contact</h2>
+<p>Privacy questions and requests: <strong>[CONTACT_EMAIL]</strong></p>
+<div class="notice">Before publishing: replace <strong>[CONTACT_EMAIL]</strong> with a real email address that you can monitor. Review this Policy again whenever the Bot starts storing new data or adding new integrations.</div>
+</article>
+
+<footer>© 2026 AFK Studios. All rights reserved. · <a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a></footer>
+</main></body></html>
